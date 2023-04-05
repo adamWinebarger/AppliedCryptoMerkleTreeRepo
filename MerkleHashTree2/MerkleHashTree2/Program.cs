@@ -20,9 +20,11 @@ string hash(string str)
     return hash;
 }
 
-string rehash(List<String> input)
+string rehash(List<String> input, int count = 1)
 {
     List<String> newStuff = new();
+
+    WriteLine("Hashes from Re-hash #{0}", count);
 
     for (int i = 0; i < input.Count; i += 2)
     {
@@ -33,7 +35,12 @@ string rehash(List<String> input)
     if (newStuff.Count % 2 != 0 && newStuff.Count != 1)
         newStuff.Add(newStuff[newStuff.Count - 1]);
 
-    return (newStuff.Count == 1) ? newStuff[0] : rehash(newStuff);
+    foreach (var v in newStuff)
+        WriteLine(v);
+
+    WriteLine("");
+
+    return (newStuff.Count == 1) ? newStuff[0] : rehash(newStuff, ++count);
 }
 
 //Driver Code
@@ -57,12 +64,17 @@ foreach (var str in plaintextFiles)
     ctf.Add(hash(str));
 
 
+WriteLine("Original Hashes for the files: ");
 
-//foreach (var b in ctf)
-//{
-//    WriteLine(b);
-//}
+foreach (var b in ctf)
+{
+    WriteLine(b);
+}
+
+WriteLine("\n");
 
 string output = rehash(ctf);
+
+WriteLine("\nFinal output: ");
 
 WriteLine(output);

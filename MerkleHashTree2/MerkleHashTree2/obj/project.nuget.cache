@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V/LtGpKAJ2SCmad2GCnQazfbU6mBZdEArmbxfFHK9AKHlbPwoF8ZWQpNDQdruWNrNj6A38AEHISf5HkAIR5Bpw==",
+  "dgSpecHash": "MLF9af3cVKetxyZlU15+DSAvHl43SvhCY1l7/g6fE4TQeAsxX5tPUbSLfBWlhhUCO7n/NluWktDJx3jEwVCu0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adamk\\source\\repos\\MerkleHashTree2\\MerkleHashTree2\\MerkleHashTree2.csproj",
+  "projectFilePath": "C:\\Users\\adamk\\source\\repos\\AppliedCryptoMerkleTreeRepo\\MerkleHashTree2\\MerkleHashTree2\\MerkleHashTree2.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
